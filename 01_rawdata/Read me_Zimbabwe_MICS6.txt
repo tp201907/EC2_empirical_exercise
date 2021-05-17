@@ -1,0 +1,58 @@
+In the compressed WINZIP folder you will find the MICS6 datasets for Zimbabwe. Nine SPSS data files were produced, 
+ corresponding to the units of analysis: 
+1. Households - hh.sav 
+2. Household members - hl.sav
+3. Mosquito nets in households - tn.sav
+4. Women in reproductive age (15-49 years of age) – wm.sav
+5. Birth history of ever-married Women in reproductive age (15-49 years of age) – bh.sav
+6. Maternal mortality - mm.sav
+5. Men in reproductive age (15-49 years of age) – mn.sav
+6. Mothers or primary caretakers of children under the age of five – ch.sav
+7. Mothers or primary caretakers of children 5-17 – fs.sav
+
+The characteristics of the data such as sample size, weights, variable labels and information on recoded or imputed variables 
+ can be found within the survey archive which will be made available shortly on http://mics.unicef.org/surveys. 
+ The survey archive will also contain the questionnaires and information on the sampling and implementation of the survey.
+
+Access Conditions:
+Survey datasets are distributed at no cost for legitimate research, with the condition that we receive a description of the objectives 
+ of any research project that will be using the data prior to authorizing their distribution.
+Copies of all reports and publications based on the requested data must be sent to the following:
+
+1) 
+Name		: Taizivei Mungate 
+Affiliation	: ZIMSTAT  
+Address		: 28th Floor Kaguvi Building
+			  Corner S.V. Muzenda and Central
+              Harare, Zimbabwe
+email		: tmungate@zimstat.co.zw
+
+2)
+Name		: Handrick Chigiji 
+Affiliation	: ZIMSTAT  
+Address		: 28th Floor Kaguvi Building
+			  Corner S.V. Muzenda and Central
+              Harare, Zimbabwe
+email		: hchigiji@zimstat.co.zw / handrixchigs@gmail.com 
+
+3)
+Name		: Tawanda Chinembiri  
+Affiliation	: Chief of Social Policy and Research  
+Address		: UNICEF Zimbabwe | 6 Fairbridge Avenue, 
+              Belgravia, P.O. Box 1250,  
+			  Harare,Zimbabwee
+email		: tchinembiri@unicef.org
+
+
+4)
+Name		: Rumbidza Evelyn Tizora  
+Affiliation	: Social Policy and Research Section  
+Address		: UNICEF Zimbabwe | 6 Fairbridge Avenue, 
+              Belgravia, P.O. Box 1250,  
+			  Harare,Zimbabwee
+email		: rtzora@unicef.org
+
+
+20192312 - MICS-HQ
+
+
