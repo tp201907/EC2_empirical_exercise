@@ -48,7 +48,7 @@ Do not submit answers by pushing commits to this repo, as your fellow candidates
     
     g. Repeat these plots for sub-indices based on reading (EC6 & EC7), math (EC8), Physical (EC9 & EC10), and Socio-emotional (EC11, EC12, EC13, EC14, EC15).  The index will be constructed taking the arithmetic average of the items as before. In the case of math, with one item, simply use the one item.
   
-    h. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.
+    h. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.  In the regression results table, have a column for the index overall, and also the regression results for each sub-index.
 
 3. Using a script, pull data from Zimbabwe on stunting (SH.STA.STNT.ME.ZS) for the most recent year from the World Bank.  Use of APIs (including software packages that use World Bank API) are encouraged.  Also, pull data on stunting (SH.STA.STNT.ME.ZS) for the Lower middle income country aggregate and Sub-Saharan Africa aggregate.  Create a table containing the prevalence of stunting in Zimbabwe, Lower middle income countries, and Sub-saharan Africa countries.
 
