@@ -45,8 +45,10 @@ Do not submit answers by pushing commits to this repo, as your fellow candidates
     e. Calculate the Cronbach's Alpha of the index and report it in a table along with the number of observations.  
   
     f. Plot the conditional mean of the created index on the child's **age in months** at the time of the interview.  You will need to take the difference between the interview date and the birth date.
+    
+    g. Repeat these plots for sub-indices based on reading (EC6 & EC7), math (EC8), Physical (EC9 & EC10), and Socio-emotional (EC11, EC12, EC13, EC14, EC15).
   
-    g. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.
+    h. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.
 
 3. Using a script, pull data from Zimbabwe on stunting (SH.STA.STNT.ME.ZS) for the most recent year from the World Bank.  Use of APIs (including software packages that use World Bank API) are encouraged.  Also, pull data on stunting (SH.STA.STNT.ME.ZS) for the Lower middle income country aggregate and Sub-Saharan Africa aggregate.  Create a table containing the prevalence of stunting in Zimbabwe, Lower middle income countries, and Sub-saharan Africa countries.
 
