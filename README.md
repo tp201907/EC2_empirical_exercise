@@ -46,7 +46,7 @@ Do not submit answers by pushing commits to this repo, as your fellow candidates
   
     f. Plot the conditional mean of the created index by the child's **age in months** at the time of the interview (i.e. a line with age in months on the X-Axis and the mean of the index on the Y-Axis). You will need to take the difference between the interview date and the birth date to create a variable depicting age in month.
     
-    g. Repeat these plots for sub-indices based on reading (EC6 & EC7), math (EC8), Physical (EC9 & EC10), and Socio-emotional (EC11, EC12, EC13, EC14, EC15).  The index will be constructed taking the arithmetic average of the items as before. In the case of math, with one item, simply use the one item.
+    g. Repeat these plots for sub-indices based on literacy+math (EC6, EC7, EC8), Physical (EC9 & EC10), Learning (EC11, EC12), and Socio-Emotional (EC13, EC14, EC15).  The index will be constructed taking the arithmetic average of the items as before. In the case of math, with one item, simply use the one item.
   
     h. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.  In the regression results table, have a column for the index overall, and also the regression results for each sub-index.
 
