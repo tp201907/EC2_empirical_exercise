@@ -34,19 +34,19 @@ Do not submit answers by pushing commits to this repo, as your fellow candidates
 
 2. Create a script (R, Stata, Python, whatever) that does the following and save the tables and figures in an Word, HTML, Excel, or text document:
   
-  1. Read in the csv file, "Zimbabwe_children_under5_interview.csv".  
+    a. Read in the csv file, "Zimbabwe_children_under5_interview.csv".  
   
-  2. Recode the responses so that Yes=1, No=0, and DK=0.  
+    b. Recode the responses so that Yes=1, No=0, and DK=0.  
   
-  3. Calculate a table of summary statistics showing the percent correct for each of EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15 by child age in years 
+    c. Calculate a table of summary statistics showing the percent correct for each of EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15 by child age in years 
   
-  4. Calculate an index, by taking the arithmetic average of the 10 items (EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15).  
+    d. Calculate an index, by taking the arithmetic average of the 10 items (EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15).  
   
-  5. Calculate the Cronbach's Alpha of the index and report it in a table along with the number of observations.  
+    e. Calculate the Cronbach's Alpha of the index and report it in a table along with the number of observations.  
   
-  6. Plot the conditional mean of the created index on the child's **age in months** at the time of the interview.  You will need to take the difference between the interview date and the birth date.
+    f. Plot the conditional mean of the created index on the child's **age in months** at the time of the interview.  You will need to take the difference between the interview date and the birth date.
   
-  7. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.
+    g. Print a table of OLS regression results regressing index on the child's **age in months** at the time of the interview.  These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.
   
 3. Export tables and figures from the script to Word, HTML, Excel, or text document.  You can choose the format, but this will be submitted along with the script.
 

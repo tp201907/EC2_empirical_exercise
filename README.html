@@ -195,13 +195,16 @@ EC15 &quot;Does (name) get distracted easily?&quot; &quot;Yes=1/No=2/DK=8&quot;<
 <h1>What is the exercise?</h1>
 <ol style="list-style-type: decimal">
 <li><p>Please clone this repository.</p></li>
-<li><p>Create a script (R, Stata, Python, whatever) that does the following and save the tables and figures in an Word, HTML, Excel, or text document:</p></li>
+<li><p>Create a script (R, Stata, Python, whatever) that does the following and save the tables and figures in an Word, HTML, Excel, or text document:</p>
+<ol style="list-style-type: lower-alpha">
 <li><p>Read in the csv file, “Zimbabwe_children_under5_interview.csv”.</p></li>
 <li><p>Recode the responses so that Yes=1, No=0, and DK=0.</p></li>
 <li><p>Calculate a table of summary statistics showing the percent correct for each of EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15 by child age in years</p></li>
 <li><p>Calculate an index, by taking the arithmetic average of the 10 items (EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15).</p></li>
 <li><p>Calculate the Cronbach’s Alpha of the index and report it in a table along with the number of observations.</p></li>
-<li><p>Create a scatterplot of the created index on the child’s <strong>age in days</strong> at the time of the interview. You will need to take the difference between the interview date and the birth date.</p></li>
+<li><p>Plot the conditional mean of the created index on the child’s <strong>age in months</strong> at the time of the interview. You will need to take the difference between the interview date and the birth date.</p></li>
+<li><p>Print a table of OLS regression results regressing index on the child’s <strong>age in months</strong> at the time of the interview. These regression results should contain at least the estimated coefficient on age, the standard error, the R squared, and the number of observations.</p></li>
+</ol></li>
 <li><p>Export tables and figures from the script to Word, HTML, Excel, or text document. You can choose the format, but this will be submitted along with the script.</p></li>
 </ol>
 </div>
