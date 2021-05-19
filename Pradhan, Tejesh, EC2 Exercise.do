@@ -32,6 +32,8 @@ import excel "$directory\01_rawdata\Zimbabwe_children_under5_interview.xlsx", sh
 tab1 EC*;
 
 
+
+
 /* ANS 2B */
 
 label define binary 1 "Yes" 0 "No";
@@ -44,6 +46,8 @@ label values `var' binary;
 tab1 EC* child_age_years;
 
 
+
+
 /* ANS 2C */
 
 local sumvars EC*;
@@ -54,16 +58,22 @@ eststo four: quietly estpost summarize `sumvars' if child_age_years == 4, detail
 esttab all three four using "$directory\Descriptive Statistics.csv", title(Summary statistics) label replace mtitle("All" "Three years old" "Four years old") cells("count(pattern(1 1) label(N)) mean(pattern(1 1) fmt(2) label(Mean)) p50(pattern(1 1) fmt(2) label(Median))") noobs;
 
 
+
+
 /* ANS 2D */
 
 egen index = rowmean(EC6-EC15);
 label variable index "Index";
 
 
+
+
 /* ANS 2E */
 
 alpha EC6-EC15, reverse(EC10 EC14 EC15);
 alpha EC6-EC15, reverse(EC10 EC14 EC15) item;
+
+
 
 
 /* ANS 2F */
@@ -81,6 +91,8 @@ label variable mean_index "Average value of overall index (EC6-EC15) for across 
 
 twoway (line mean_index age_mth, sort), ytitle(Index) xtitle(Age in months) title(Average value of overall index (EC6-EC15) for across ages in months);
 graph export "$directory\line_mean_index_overall.png", replace;
+
+
 
 
 /* ANS 2G */
@@ -130,6 +142,8 @@ graph export "$directory\line_`var'.png", replace;
 };
 
 
+
+
 /* ANS 2H */
 
 /* Regressing indices on age in months */
@@ -142,6 +156,10 @@ eststo reg_`var': reg `var' age_mth, robust;
 };
 
 esttab reg_* using "$directory\Regression Results.csv", replace label title(Assocation between children's age and their development) compress collabels(none) nobase nolines nogaps mtitle("Overall" "Math" "Literacy and Math" "Physical" "Learning" "Socio-emotional") b(2) se(2) stats(N r2, fmt(0 2));
+
+
+
+
 
 
 
