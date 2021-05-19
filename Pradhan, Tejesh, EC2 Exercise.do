@@ -101,7 +101,7 @@ egen index_socio = rowmean(EC13-EC15);
 label variable index_socio "Index - Socio-emotional";
 
 
-/* Summary for indices */
+/* Summary for all indices */
 
 local indexvars index index_*;
 eststo index_all: quietly estpost summarize `indexvars', detail;
@@ -122,6 +122,7 @@ label variable mean_index_phy "Average value of physical index (EC9-EC10) for ac
 label variable mean_index_learn "Average value of learning index (EC11-EC12) for across ages in months";
 label variable mean_index_socio "Average value of socio-emotional index (EC13-EC15) for across ages in months";
 
+/* Line graph for all indices */
 foreach var of varlist mean_index_math-mean_index_socio {;
 local varlabel: variable label `var';
 twoway (line `var' age_mth, sort), ytitle(Index) xtitle(Age at interview (Months)) title(`varlabel');
@@ -131,6 +132,7 @@ graph export "$directory\line_`var'.png", replace;
 
 /* ANS 2H */
 
+/* Regressing indices on age in months */
 foreach var of varlist index index_math-index_socio {;
 
 replace `var' = `var' * 100;
@@ -148,6 +150,8 @@ esttab reg_* using "$directory\Regression Results.csv", replace label title(Asso
 /* ANS 3 */
 
 #delimit;
+
+/* Importing indicator from WDI */
 wbopendata, language(en - English) indicator(sh.sta.stnt.me.zs) clear long;
 keep if (countryname == "Zimbabwe" | countryname == "Lower middle income" | countryname == "Sub-Saharan Africa");
 keep countryname year sh_sta_stnt_me_zs;
@@ -158,6 +162,7 @@ label variable sh_sta_stnt_me_zs "Prevalence of stunting, height for age (% of c
 /* Series begins in 2000 */
 keep if year >= 2000;
 
+/* Graphing indicator trends */
 twoway (line sh_sta_stnt_me_zs year if country == "Zimbabwe")(line sh_sta_stnt_me_zs year if country == "Lower middle income")(line sh_sta_stnt_me_zs year if country == "Sub-Saharan Africa"), legend(order(1 "Zimbabwe" 2 "LMC" 3 "SSA")) title("Stunting in Zimbabwe, LMC and SSA") ytitle("Percent of children under 5");
 
 graph export "$directory\line_stunting.png", replace;
